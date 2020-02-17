@@ -23,4 +23,4 @@
 | 1:15 PM  | 19     | Groups Do: Activity #5                | 0:20 |       |
 | 1:35 PM  | 20     | Instructor Do: Review Activity #5     | 0:10 |       |
 | 1:45 PM  | 21     | Everyone Do: Reflect On The Day       | 0:15 |       |
-| 2:00 PM  | 21     | Instructor Do: End Class              | 0:00 |       |
+| 2:00 PM  | 22     | Instructor Do: End Class              | 0:00 |       |
