@@ -20,6 +20,7 @@
 
 -   Have students explain how they might go about reversing a string.
 -   After explaining the demo code, advise students that this example is just one way in which we can reverse a string. There are many other ways to complete the same function. Remind them to not be discouraged if in the following activities, their code looks different from their peers' or the solutions'.
+-   Make sure to run the test cases when demonstrating how all of the code passes.
 
 ### 6. Groups Do: 02-Reverse (20 minutes)
 
@@ -27,7 +28,7 @@
 
     **Instructions**
 
-    -   In this activity we are still assuming that you are given a string. Complete the 'reverseStr' function utilizing the JavaScript [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) method so that it returns a new string with the reversed order of characters.
+    -   In this activity we are still assuming that you are given a string. Complete the 'reverseStr' function utilizing the JavaScript [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) method so that it returns a new string with the reversed order of characters. Make sure you are running the test cases when checking your code!
 
     _Examples_
 
@@ -82,6 +83,7 @@
     -   "Understanding how we can condense our code will help to impress your interviewer, and demonstrate that you have a solid comprehension of the algorithm you wrote."
 
 -   If you have enough time explain the solution to the reverseInt() algorithm:
+
     -   Explain to students reversing an integer involves many more edge-cases than reversing a string.
     -   We need to account for the following:
         -   negative vs. positive integers
@@ -92,17 +94,71 @@
     -   Lastly, explain how the Math.sign() function takes in an integer, and returns a +/-1 based on the value of the integer.
     -   In our algorithm, we are multiplying our 'reversed' variable's value by the output of 'Math.sign(n)'.
 
-### 8. Instructor Demo: Activity #2 (5 minutes)
+-   Congratulate the students on completing this first activity! Some of them may feel discouraged, and lost at this time, but ensure them that algorithms are all about practice!
 
-### 9. Groups Do: Activity #2 (15 minutes)
+### 8. Instructor Demo: 03-PalindromesDemo (5 minutes)
 
-### 10. Instructor Do: Review Activity #2 (10 minutes)
+-   Have students explain how they might write an algorithm that checks if a string is a palindrome.
+-   Explain the demo code line by line to the students.
+-   Emphasize how even though we just created our own '.reverse()' algorithm in the last activity, JavaScript has its own built-in methods that operate in the same manner and we can utilize them when building other algorithms.
+-   Make sure you are running the test cases when checking your code!
 
-### 11. Instructor Demo: Activity #3 (5 minutes)
+### 9. Groups Do: 04-Palindromes (15 minutes)
 
-### 12. Groups Do: Activity #3 (15 minutes)
+-   Have students complete the following task:
 
-### 13. Instructor Do: Review Activity #3 (10 minutes)
+    **Instructions**
+
+    -   In this activity we are still assuming that you are given a string. Complete the 'palindrome()' function using JavaScript's [.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) method so that it returns true if the string is a palindrome or false if it is not. Palindromes are strings that form the same word if it is reversed. _Do_ include spaces and punctuation in determining if the string is a palindrome. Make sure you are running the test cases when checking your code!
+
+    _Examples_
+
+    -   palindrome("abba") === true
+    -   palindrome("abcdefg") === false
+    -   palindrome("hello!") === false
+    -   palindrome("!jkj!") === true
+
+    _Hints_
+
+    -   The '.every()' function is used to do a boolean check on every element within an array.
+    -   If any of the boolean checks return false, the final output from the '.every()' method will be 'false'.
+    -   We need to compare the each element to its coounter-element on the end of the array, for example in the following array:
+
+        ```
+        ["a", "b", "c", "b", "a"]
+        ```
+
+    -   When we arrive to the first element `"a"` with the '.every()' method, we will compare it to the last element which is also `"a"`. Then move into the second element `"b"`, and compare it to the second to last element which is also `"b"`. Element `"c"` will be compared against itself since it is in the middle of the array. Ultimately, the functions's output will be `True`.
+
+### 10. Instructor Do: Review 04-Palindromes (10 minutes)
+
+-   Open up `Activities/04-Palindromes/Solved/palindromes.js`
+-   Ask the students if they would like to share how they solved the activity.
+-   Make sure to take some time to explain the '.every()' method to the students while utilizing the diagram in the presentation slides.
+-   Emphasize how before we can utilize the '.every()' method we need to convert the given string into an array.
+-   The first element passed into '.every()' is an arrow function that will be called for every element in the array.
+-   'char' represents the value of the current character from the array we are iterating through.
+-   'i' represents the index of the current character from the array we are iterating through.'
+-   _IMPORTANT_ ~~ Ask students which of the two Palindrome algorithms they believe is more efficient. Explain to them that in the second algorithm we are iterating twice through the same array, as opposed to the first one where we only iterate through it once. Ultimately, it's important for them to understand how the additional steps that our second algorithm has to take, affects the overall efficiency of it.
+
+### 11. Instructor Demo: 05-AnagramsDemo (5 minutes)
+
+### 12. Groups Do: 06-Anagrams (15 minutes)
+
+-   Have students complete the following task:
+
+    **Instructions**
+
+
+    _Examples_
+
+
+
+    _Hints_
+
+### 13. Instructor Do: Review 06-Anagrams (10 minutes)
+
+-   Open up `Activities/06-Anagrams/Solved/anagrams.js`
 
 ### 14. BREAK (35 minutes)
 
