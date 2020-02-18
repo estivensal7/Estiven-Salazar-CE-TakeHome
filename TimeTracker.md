@@ -12,7 +12,7 @@
 | 11:05 AM | 8      | Instructor Demo: 03-PalindromesDemo   | 0:05 |       |
 | 11:10 AM | 9      | Students Do: 04-Palindromes           | 0:15 |       |
 | 11:25 AM | 10     | Instructor Do: Review 04-Palindromes  | 0:10 |       |
-| 11:35 AM | 11     | Instructor Demo: 05-AnagramsDemo      | 0:05 |       |
+| 11:35 AM | 11     | Instructor Demo: 05-CharMap           | 0:05 |       |
 | 11:40 AM | 12     | Students Do: 06-Anagrams              | 0:15 |       |
 | 11:55 AM | 13     | Instructor Do: Review 06-Anagrams     | 0:10 |       |
 | 12:05 PM | 14     | BREAK                                 | 0:35 |       |

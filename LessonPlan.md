@@ -141,7 +141,11 @@
 -   'i' represents the index of the current character from the array we are iterating through.'
 -   _IMPORTANT_ ~~ Ask students which of the two Palindrome algorithms they believe is more efficient. Explain to them that in the second algorithm we are iterating twice through the same array, as opposed to the first one where we only iterate through it once. Ultimately, it's important for them to understand how the additional steps that our second algorithm has to take, affects the overall efficiency of it.
 
-### 11. Instructor Demo: 05-AnagramsDemo (5 minutes)
+### 11. Instructor Demo: 05-CharMap (5 minutes)
+
+-   Review the activity with students line by line.
+-   Explain to students the concept of building out character maps, and how we can utilize character maps for several different algorithms.
+-   Make sure you demonstrate the outputs of the code in your terminal by running the command `node charMap.js`
 
 ### 12. Groups Do: 06-Anagrams (15 minutes)
 
@@ -149,16 +153,27 @@
 
     **Instructions**
 
+    -   Utilizing the `buildCharMap()` function from the previously demonstrated code, write an algorithm that checks to see if two provided strings are anagrams of eachother. One string is an anagram of another if it uses the same characters in the same quantity. Only consider characters, not spaces or punctuation. Consider capital letters to be the same as lower case.
 
     _Examples_
 
-
+    -   anagrams('rail safety', 'fairy tales') --> True
+    -   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+    -   anagrams('Hi there', 'Bye there') --> False
 
     _Hints_
+
+    -   Initialize 'charMap' variables for each string containing the outputs of the `buildCharMap()` function.
+    -   Check if the length of each character map is the same as the other... else, return false since this means the strings cannot be anagrams.
 
 ### 13. Instructor Do: Review 06-Anagrams (10 minutes)
 
 -   Open up `Activities/06-Anagrams/Solved/anagrams.js`
+-   Review the code line by line with the students.
+-   Emphasize the importance of building a helper function such like the `buildCharMap()` function when keeping your code neat and organized.
+-   Explain how by utilizing JavaScript's `Object.keys()` method we can isolate the keys in each charMap, and grab its length. _If the lengths are different, the two strings cannot be anagrams_
+-   Explain how we can use a for-in loop to iterate through an object's keys. In our case, we are comparing the value of the current key in the first object against its value in the second object.
+-   As long as the two conditional statements are false, both strings are anagrams of each other!
 
 ### 14. BREAK (35 minutes)
 
