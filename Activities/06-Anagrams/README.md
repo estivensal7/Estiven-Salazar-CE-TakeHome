@@ -1,4 +1,4 @@
-## 04 - Palindromes
+## 06 - Anagrams
 
 ### Directions
 

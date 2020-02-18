@@ -103,7 +103,7 @@
 -   Emphasize how even though we just created our own '.reverse()' algorithm in the last activity, JavaScript has its own built-in methods that operate in the same manner and we can utilize them when building other algorithms.
 -   Make sure you are running the test cases when checking your code!
 
-### 9. Groups Do: 04-Palindromes (15 minutes)
+### 9. Groups Do: 04-Palindromes (20 minutes)
 
 -   Have students complete the following task:
 
@@ -147,7 +147,7 @@
 -   Explain to students the concept of building out character maps, and how we can utilize character maps for several different algorithms.
 -   Make sure you demonstrate the outputs of the code in your terminal by running the command `node charMap.js`
 
-### 12. Groups Do: 06-Anagrams (15 minutes)
+### 12. Groups Do: 06-Anagrams (20 minutes)
 
 -   Have students complete the following task:
 
@@ -177,11 +177,39 @@
 
 ### 14. BREAK (35 minutes)
 
-### 15. Instructor Demo: Activity #4 (5 minutes)
+### 15. Instructor Demo: 07-QueueDemo (5 minutes)
 
-### 16. Students Do: Activity #4 (20 minutes)
+-   Review the activity with students line by line.
+-   Explain the concepts of queues utilizing the diagrams in the presentation slides.
 
-### 17. Instructor Do: Review Activity #4 (10 minutes)
+### 16. Students Do: 08-Queue (15 minutes)
+
+-   Have students complete the following task:
+
+    **Instructions**
+
+    -   Using the starter code provided to you, complete the 'front()', 'isEmpty()', and 'printQueue()' functions. Remember, the queue should be a class with methods 'add', 'remove', 'front', 'isEmpty', and 'printQueue'. Adding to the queue should store an element until it is removed.
+
+    _Examples_
+
+    -   const q = new Queue();
+    -   q.isEmpty(); // returns true;
+    -   q.add(1);
+    -   q.add(2);
+    -   q.add(3);
+    -   q.isEmpty(); // returns false;
+    -   q.front(); // returns 3;
+    -   q.printQueue(); // returns ;
+    -   q.remove(); // returns 1;
+
+    _Hints_
+
+    -   _IMPORTANT_ - Make sure you are returning your outputs. For the printQueue() method, return the queue as a string with no spaces.
+
+### 17. Instructor Do: Review 08-Queue (10 minutes)
+
+-   Open up `Activities/06-Anagrams/Solved/anagrams.js`
+-   Review the code line by line with the students.
 
 ### 18. Instructor Demo: Activity #5 (5 minutes)
 
