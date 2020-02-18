@@ -2,19 +2,106 @@
 
 ### Overview
 
+In this class we will be introducing students to the fundamental concepts of algorithms and data structures. We will begin class by reviewing the concepts of Big O notation, and setting up our testing environment. It will be a challenging class for some students. Remind them every chance you get that working algorithms, and data structures is all about practice. The more that they work with these concepts, the easier they will be able to not only understand other algorithms, but to also tackle problems in their own code.
+
 #### Instructor Priorities
+
+-   Students should be able to define what an `algorithm` is.
+
+-   Students should be able to define what `data structures` are.
+
+-   Students should understand that we use Big O notation when determining the time complexity of an algorithm. However, they are not expected to memorize the differences between the several time complexities by the end of class.
+
+-   Students should understand that we are just scratching the surface of algorithms & data structures in today's activities. However, understanding these fundamentals will make it easier for them to enhance their technical interviewing skills.
 
 #### Instructor Notes
 
+-   Have your TAs refer to the [TimeTracker](./TimeTracker.md) to stay on task.
+
+-   [Visual Go](https://visualgo.net/en) is a great location to visualize many popular algorithms, and data structures!
+
+-   [Queue & Stack Visualization](https://visualgo.net/en/list)
+
 ### Class Objectives
+
+-   Students should be able to define what an `algorithm` is.
+
+-   Students should be able to define what `data structures` are.
+
+-   Students should understand what Big O notation is, and how we can identify which complexity matches their algorithm.
 
 ### 1. Instructor Do: Welcome Students (5 minutes)
 
+-   Discuss today's objectives with the students.
+
+-   Advise students that today might be a bit of a challenging yet FUN day.
+
+-   Have the students research the following questions:
+    -   What is an algorithm?
+    -   What is a data structure?
+    -   How can you determine if one algorithm is better than another?
+    -   Why should Developers learn to implement algorithms?
+
 ### 2. Everyone Do: Students Share Responses (5 minutes)
+
+-   Have students share their responses to the questions.
+
+-   Discuss your own answers to the questions with the students.
 
 ### 3. Instructor Do: Review Big O Notation (10 minutes)
 
+-   Discuss the following questions with students:
+
+    -   What is runtime complexity?
+
+        -   Runtime complexity is a term that we use to describe how performant an algorithm is.
+        -   We use runtime complexity to compare different solutions for solving a given problem.
+
+    -   Why do we need to understand runtime complexity?
+        -   Many times in technical interviews, the interviewer will ask what the runtime complexity of your solution will be.
+        -   It's best to be able to identify a possible runtime complexity for our solution, as it shows just how much of an understanding we have of our solution, and the given problem.
+
+-   Feel free to demonstrate the given examples in the presentation slides to the students.
+
 ### 4. Everyone Do: Review & Set up Jest (10 minutes)
+
+In today's class we will be using Jest to run our test cases. All of the testing code is already implemented into the activities so there is no need for editing any of the testing code.
+
+Explain to students the concept of running test cases. At the moment there is no need to explain the test cases line by line to the students.
+
+_Most importantly_ explain to students how we can run our test cases using jest! This will be very important since it will serve as an easy way for them to determine the completion, and efficiency of their code.
+
+If you are not familiar with Jest, please feel free to review the documentation beforehand. [Jest Docs](https://jestjs.io/docs/en/getting-started)
+
+Getting started with Jest:
+
+-   We first need to import Jest via npm by running an `npm install --save-dev jest`. In our case, Jest is already added to the package.json file so a simple `npm install` will suffice.
+
+-   Next, we need to include jest as a property of our package.json file, and set the 'testEnvironment' to 'node' like so:
+
+          {
+              "name": "Activities",
+              "version": "1.0.0",
+              "description": "",
+              "main": "index.js",
+              "scripts": {
+                  "test": "echo \"Error: no test specified\" && exit 1"
+              },
+              "jest": {
+                  "testEnvironment": "node"
+              },
+              "keywords": [],
+              "author": "",
+              "license": "ISC"
+          }
+
+-   In order to run our test cases, we must specify the path of the file containing our test cases, and provide it to Jest in the command line. For example, `jest 01-ActivityOne/activityOne.test.js --watch`
+
+-   By adding the --watch flag, Jest will keep the test suite open for us. It might be best for students to run the test cases, and keep the suite open while they solve the activities. You can refresh the test cases by pressing `Enter` in the CLI.
+
+-   Ensure that the students set up their environment properly by running `npm install`, and running the first test cases in 01-ReverseDemo, `jest 01-ReverseDemo/reverseDemo.test.js --watch`.
+
+-   Remind them that for every new activity we will have to pass in the appropriate path to Jest.
 
 ### 5. Instructor Do: 01-ReverseDemo (5 minutes)
 
@@ -44,7 +131,7 @@
 
     **~BONUS~**
 
-    **Directions**
+    **Instructions**
 
     -   If you complete the reverseStr() algorithm, please attempt the reverseInt() algorithm. In the reverseInt() function, write an algorithm where given an integer, return an integer that is the reverse ordering of the numbers. Please keep in mind that there are many more edge-cases we have to account for in this algorithm compared to the reverseStr() algorithm.
 
@@ -122,13 +209,13 @@
 
     -   The '.every()' function is used to do a boolean check on every element within an array.
     -   If any of the boolean checks return false, the final output from the '.every()' method will be 'false'.
-    -   We need to compare the each element to its coounter-element on the end of the array, for example in the following array:
+    -   We need to compare the each element to its mirror-element on the end of the array, for example in the following array:
 
         ```
         ["a", "b", "c", "b", "a"]
         ```
 
-    -   When we arrive to the first element `"a"` with the '.every()' method, we will compare it to the last element which is also `"a"`. Then move into the second element `"b"`, and compare it to the second to last element which is also `"b"`. Element `"c"` will be compared against itself since it is in the middle of the array. Ultimately, the functions's output will be `True`.
+    -   When we arrive to the first element `"a"` with the '.every()' method, we will compare it to the last element which is also `"a"`. Then move into the second element `"b"`, and compare it to the second to last element which is also `"b"`. Element `"c"` will be compared against itself since it is in the middle of the array. Ultimately, the function's output will be `True`.
 
 ### 10. Instructor Do: Review 04-Palindromes (10 minutes)
 
@@ -252,6 +339,12 @@
 -   Before we return our record from StackB, we want to pop this record, then push our records in StackB back into StackA one at a time.
 -   Now we are all done, and ready to return the original record that was popped out of StackB.
 
-### 21. Everyone Do: Reflect On The Day(10 minutes)
+### 21. Everyone Do: Reflect On The Day(5 minutes)
+
+GREAT JOB! Today you may have came across several difficult questions, and it's completely ok to be exhausted from all of this problem-solving. Reflect with the class on the following topics:
+
+-   How much do we understand about algorithms & data structures?
+-   How can we compare the efficiency of similar algorithms?
+-   Can you think of any awesome features you may be able to implement with the skills we learned today?
 
 ### 22. End Class (0 minutes)
