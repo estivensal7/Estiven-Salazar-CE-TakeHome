@@ -180,7 +180,7 @@
 ### 15. Instructor Demo: 07-QueueDemo (5 minutes)
 
 -   Review the activity with students line by line.
--   Explain the concepts of queues utilizing the diagrams in the presentation slides.
+-   Explain the concept of queues utilizing the diagrams in the presentation slides.
 
 ### 16. Students Do: 08-Queue (15 minutes)
 
@@ -208,14 +208,49 @@
 
 ### 17. Instructor Do: Review 08-Queue (10 minutes)
 
--   Open up `Activities/06-Anagrams/Solved/anagrams.js`
+-   Open up `Activities/08-Queue/Solved/queue.js`
 -   Review the code line by line with the students.
+-   Students may be wondering, why they would need to ever use a queue instead of an array. Explain to them that the main reasons we use a queue are when an interviewer requests us to build a queue from scratch, or if we ever want to limit an array's properties for optimization in our code.
+-   Make sure you run the test cases, and show students how we can test our methods!
 
-### 18. Instructor Demo: Activity #5 (5 minutes)
+### 18. Instructor Demo: 09-Stack (5 minutes)
 
-### 19. Students Do: Activity #5 (20 minutes)
+-   Review the activity with students line by line.
+-   Explain the concept of stacks utilizing the diagrams in the presentation slides.
 
-### 20. Instructor Do: Review Activity #5 (10 minutes)
+### 19. Students Do: 10-QueueFromStack (20 minutes)
+
+-   Have students complete the following task:
+
+    **Instructions**
+
+    -   Implement a Queue datastructure using two stacks.
+    -   The Stack implementations are already created for you.
+    -   _Do not_ create an array inside of the 'Queue' class.
+    -   Queue should implement the methods 'add', 'remove', and 'peek'.
+    -   For a reminder on what each method does, look back at the Stack exercise.
+
+    _Examples_
+
+    -   const q = new Queue();
+    -   q.add(1);
+    -   q.add(2);
+    -   q.peek(); - returns 1
+    -   q.remove(); - returns 1
+    -   q.remove(); - returns 2
+
+    _Hint_
+
+    -   Utilize `while-loops` to keep track of the `.peek()` methods, and ensuring that there are still values in the Stacks!
+
+### 20. Instructor Do: Review 10-QueueFromStack (10 minutes)
+
+-   Open up `Activities/10-QueueFromStack/Solved/queueFromStack.js`
+-   Explain the code to the students line by line.
+-   In order to grab our first record from Stack A, we are going to pop every record from StackA and push it into StackB one at a time.
+-   When we peek into StackA, and it is empty.. this means that our last pushed record into StackB is the record that we want to return.
+-   Before we return our record from StackB, we want to pop this record, then push our records in StackB back into StackA one at a time.
+-   Now we are all done, and ready to return the original record that was popped out of StackB.
 
 ### 21. Everyone Do: Reflect On The Day(10 minutes)
 
